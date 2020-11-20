@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(253, 253, 253);
+}
+/* --A-- Nav */
+.cabecera {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(162, 198, 241);
+}
+.imagen-cabecera {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 2;
+  opacity: 90%;
+}
+
+.logotipo {
+  position: relative;
+  margin-top: 2px;
+  text-align: center;
+  z-index: 3;
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  width: 180px;
+  height: 100%;
+}
+
+.logo_letra {
+  font-family: roboto;
+  color: rgb(8, 12, 1);
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px rgb(105, 247, 223);
+}
+/* --B-- NavBar */
+.navbar {
+  background-color: rgb(5, 5, 5);
+}
+
+.navbar ul {
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 20px;
+  color: snow;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(70, 85, 218);
+}
+
+/* --C-- Cuerpo -- */
+/*  FILA 1 --C.1--Portada */
+
+.cuerpo_noticias {
+  display: flex;
+  flex-direction: column;
+/*   background-color: rgb(247, 167, 167);
+ */  width: 980px;
+  height: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+.portada {
+  background-color: #504545;
+  width: 980px;
+  height: 372px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 20px;
+  grid-template-areas:
+    "tituloportada imagen_portada"
+    "descripcion_portada imagen_portada"
+    "descripcion_portada imagen_portada"
+    "autor_portada imagen_portada";
+}
+
+/* C.1.1. Interior Portada */
+
+.titulo_portada {
+  grid-area: tituloportada;
+  width: 428px;
+  height: 125px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+
+  color: white;
+}
+
+.descripcion_portada {
+  grid-area: descripcion_portada;
+  align-self: start;
+  width: 428px;
+  height: 135px;
+  font-family: Fira Sans;
+  font-size: 16px;
+  color: white;
+  font-style: normal;
+}
+
+.autor_portada {
+  grid-area: autor_portada;
+  width: 220px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.imagen_portada {
+  background-color: dodgerblue;
+  grid-area: imagen_portada;
+  width: 489.13px;
+  height: 330px;
+}
+
+/* FILA 2 -  NOTICIAS PRINCIPALES */
+
+.noticias_principales {
+  width: 980px;
+  height: 375px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nprincipal_1 {
+  width: 301px;
+  height: 374px;
+  border: 0.5px solid #c4c4c4;
+  background-color: #f7f5f5;
+}
+
+.imagen_nprincipal1 {
+  width: 301px;
+  height: 161px;
+}
+
+.informacion_noticiap {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion_noticia {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.descripcion_noticia > a {
+  font-family: Noto Serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+.autor_noticia {
+  margin-top: 20px;
+  font-family: Noto Serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.descripcion_noticia > a:hover {
+  text-decoration: underline;
+}
+
+/* FILA 3 - NOTICIA DE LA SEMANA */
+
+.fila3 {
+  width: 980px;
+  height: 372px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.noticia_semana {
+  width: 640px;
+  height: 372px;
+  background-color: #504545;
+  display: flex;
+  flex-direction: row;
+}
+
+.noticia_semana_fila1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.titulo_noticia_semana {
+  font-family: Fira Sans;
+  font-weight: 600;
+  font-size: 32px;
+  color: #ffffff;
+}
+.descripcion_noticia_semana {
+  font-family: Fira Sans;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffffff;
+  justify-self: flex-start;
+  font-style: normal;
+}
+.autor_noticia_semana {
+  font-family: Fira Sans;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.flyer1 {
+  width: 300px;
+  height: 372px;
+  border: 1px solid rgb(100, 102, 100);
+}
+
