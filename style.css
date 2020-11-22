@@ -82,7 +82,7 @@ body {
 .cuerpo_noticias {
   display: flex;
   flex-direction: column;
-  background-color: rgb(247, 167, 167);
+  /* background-color: rgb(247, 167, 167); */
   width: 980px;
   height: 2400px;
   margin-left: auto;
